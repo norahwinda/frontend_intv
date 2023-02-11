@@ -10,7 +10,7 @@ function BodyPart1() {
         <button>Let's start</button>
       </div>
       <div className='bodypart1__right'>
-            <img  src='/Images/body1.png' alt=''/>
+            <img  src='./Images/body1.png' alt=''/>
       </div>
     </div>
   )
