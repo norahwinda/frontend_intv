@@ -1,11 +1,12 @@
 import React from 'react'
 import './BodyPart3.css'
+import Rectangle4 from '../../images/Rectangle4.png'
 
 function BodyPart3() {
   return (
     <div className='bodypart3'>
       <div className='bodypart3__top'>
-        <img src={"./images/Rectangle4.png"} alt=''/>
+        <img src={Rectangle4} alt=''/>
       </div>
       <div className='bodypart3__bottom'>
          <h1>Ask us questions</h1>
