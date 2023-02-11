@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/frontend_intv/static/css/main.a4dedcef.css",
+    "main.css": "/frontend_intv/static/css/main.b183e626.css",
     "main.js": "/frontend_intv/static/js/main.ba2ddb3a.js",
     "static/js/787.07247cd9.chunk.js": "/frontend_intv/static/js/787.07247cd9.chunk.js",
     "static/media/body1.png": "/frontend_intv/static/media/body1.39dd1fea2e2463713b89.png",
@@ -9,12 +9,12 @@
     "static/media/Rectangle4.png": "/frontend_intv/static/media/Rectangle4.15cca9eeb0b0fbb2e9ef.png",
     "static/media/Rectangle1.png": "/frontend_intv/static/media/Rectangle1.745853bee55414dc2c94.png",
     "index.html": "/frontend_intv/index.html",
-    "main.a4dedcef.css.map": "/frontend_intv/static/css/main.a4dedcef.css.map",
+    "main.b183e626.css.map": "/frontend_intv/static/css/main.b183e626.css.map",
     "main.ba2ddb3a.js.map": "/frontend_intv/static/js/main.ba2ddb3a.js.map",
     "787.07247cd9.chunk.js.map": "/frontend_intv/static/js/787.07247cd9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4dedcef.css",
+    "static/css/main.b183e626.css",
     "static/js/main.ba2ddb3a.js"
   ]
 }
