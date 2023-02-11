@@ -1,0 +1,18 @@
+.bodypart2{
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+.bodypart2__top>img{
+    max-width: 100%;
+}
+
+.bodypart2__center>img{
+    max-width: 100%;
+}
+
+.bodypart2__bottom>img{
+    max-width: 100%;
+}

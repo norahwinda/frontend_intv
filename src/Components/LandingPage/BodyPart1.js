@@ -1,0 +1,19 @@
+import React from 'react'
+import './BodyPart1.css'
+
+function BodyPart1() {
+  return (
+    <div className='bodypart1'>
+      <div className='bodypart1__left'>
+        <h1>Photography for all your products needs</h1>
+        <p>You will meet different people from every part of the world with excellent skills for your products</p>
+        <button>Let's start</button>
+      </div>
+      <div className='bodypart1__right'>
+            <img  src='/Images/body1.png' alt=''/>
+      </div>
+    </div>
+  )
+}
+
+export default BodyPart1
