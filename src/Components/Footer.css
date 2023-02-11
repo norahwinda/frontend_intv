@@ -3,8 +3,8 @@
   height: 70px;
   text-align: center;
   border-top: 1px solid silver;
-  position: sticky;
   position: -webkit-sticky;
+  position: sticky;
   bottom: 0;
   background-color: #eaeef1;
 }
