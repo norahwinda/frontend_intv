@@ -5,7 +5,7 @@ function BodyPart3() {
   return (
     <div className='bodypart3'>
       <div className='bodypart3__top'>
-        <img src='./Images/Rectangle4.png' alt=''/>
+        <img src={"./Images/Rectangle4.png"} alt=''/>
       </div>
       <div className='bodypart3__bottom'>
          <h1>Ask us questions</h1>
