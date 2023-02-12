@@ -1,28 +1,31 @@
-.header{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    background-color: #EAEEF1;
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #eaeef1;
 }
 
-.header>h3{
-    margin-right: auto;
-    margin-left: 40px;
+.header > h3 {
+  margin-right: auto;
+  margin-left: 40px;
 }
-.header__right{
-    display: flex;
-    align-items: center;
-    margin-right: 40px;
+
+.header-right {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
 }
-.header__right>button{
-    margin-right: 30px;
-    border-radius: 8px;
-    cursor: pointer;
-    border: 0px;
-    background-color: #EAEEF1;
+
+.header-right > button {
+  margin-right: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 0;
+  background-color: #eaeef1;
 }
-.header__avatar{
-    cursor: pointer;
+
+.header-avatar {
+  cursor: pointer;
 }
