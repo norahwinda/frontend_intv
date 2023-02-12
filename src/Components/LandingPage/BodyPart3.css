@@ -1,18 +1,20 @@
-.bodypart3{
-    color: black;
-    display: flex;
-    justify-content:space-evenly ;
-    align-items: center;
+.bodypart3 {
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.bodypart3__top{
-    margin-right: 10px;
-    margin-left: 40px;
+
+.bodypart3-top {
+  margin-right: 10px;
+  margin-left: 40px;
 }
-.bodypart3__top>img{
-    max-width: 100%;
-    
+
+.bodypart3-top > img {
+  max-width: 100%;   
 }
-.bodypart3__bottom{
-    margin-left: 10px;
-    margin-right: 20px;
+
+.bodypart3-bottom {
+  margin-left: 10px;
+  margin-right: 20px;
 }
