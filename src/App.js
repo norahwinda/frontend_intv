@@ -1,16 +1,16 @@
-import './App.css';
-import LandingPage from './Components/LandingPage/LandingPage';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+import './App.css'
+import LandingPage from './Components/LandingPage/LandingPage'
+import Header from './Components/Header'
+import Footer from './Components/Footer'
 
-function App() {
+function App () {
   return (
-    <div className="app">
-     <Header />
+    <div className='app'>
+      <Header />
       <LandingPage />
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
