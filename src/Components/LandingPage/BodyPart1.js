@@ -2,7 +2,7 @@ import React from 'react'
 import './BodyPart1.css'
 import body from '../../images/body1.png'
 
-function BodyPart1() {
+function BodyPart1 () {
   return (
     <div className='bodypart1'>
       <div className='bodypart1-left'>
@@ -11,7 +11,7 @@ function BodyPart1() {
         <button>Let's start</button>
       </div>
       <div className='bodypart1-right'>
-            <img  src={body} alt=''/>
+        <img src={body} alt='' />
       </div>
     </div>
   )
