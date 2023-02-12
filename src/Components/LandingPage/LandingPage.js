@@ -4,7 +4,7 @@ import BodyPart2 from './BodyPart2'
 import BodyPart3 from './BodyPart3'
 import './LandingPage.css'
 
-function LandingPage() {
+function LandingPage () {
   return (
     <div className='landingpage'>
       <BodyPart1 />
