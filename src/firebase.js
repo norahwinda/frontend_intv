@@ -4,7 +4,7 @@ import { getAuth, GoogleAuthProvider } from 'firebase/auth'
 
 const firebaseConfig = {
   apiKey: "AIzaSyDBarPhu9MiqVBdpsNF1c9aBA3gw1e247A",
-  authDomain: "https://github.com/norahwinda",
+  authDomain: "interview-project-d87e0.firebaseapp.com",
   projectId: "interview-project-d87e0",
   storageBucket: "interview-project-d87e0.appspot.com",
   messagingSenderId: "465273563710",
