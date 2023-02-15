@@ -9,7 +9,7 @@ function Signup () {
   const signInWithGoogle = () => {
     signInWithPopup(auth, provider).then((result) => {
       console.log(result)
-      navigate('/')
+      navigate('/frontend_intv')
     }).catch(() => {
       alert('Unable to Sign up')
     })

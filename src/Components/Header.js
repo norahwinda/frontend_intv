@@ -14,14 +14,14 @@ function Header () {
   const LogOut = () => {
     signOut(lo).then(() => {
       alert('Logged Out succesfully')
-      navigate('/')
+      navigate('/frontend_intv')
     }).catch(() => {
       alert('An error occured while logging out')
     })
   }
 
   const handleHomeClick = () => {
-    navigate('/home')
+    navigate('/frontend_intv/home')
   }
   return (
     <div className='header'>
@@ -33,7 +33,7 @@ function Header () {
             <button onClick={LogOut}>SIGN OUT</button>
             <Avatar src={user.photoURL} className='header-avatar' />
         </div>
-        : <button onClick={() => navigate('/signup')}>SIGN IN</button>
+        : <button onClick={() => navigate('/frontend_intv/signup')}>SIGN IN</button>
         }
       </div>
     </div>
