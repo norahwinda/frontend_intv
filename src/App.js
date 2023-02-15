@@ -27,7 +27,7 @@ function App () {
       <Router>
         <Header />
         <Routes>
-        <Route path='/' element={<LandingPage />} />
+        <Route exact path='/' element={<LandingPage />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/home' element={<Home />} />
         <Route path='/userinfo' element={<UserInfo />} />
