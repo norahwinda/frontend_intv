@@ -1,0 +1,18 @@
+.home-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.home-cardp1 {
+  margin-left: 20px;
+}
+
+.home-cardp2 {
+  margin-right: 80px;
+}
+
+.home-card > input{
+  display: none;
+}

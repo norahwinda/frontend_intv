@@ -1,0 +1,17 @@
+.album {
+  width: 250px;
+  height: 250px;
+  margin: 30px;
+  color: white;
+  border-radius: 8px;
+  background-color: blue; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.album > p {
+  margin: 10px;
+}

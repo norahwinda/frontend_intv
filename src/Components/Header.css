@@ -4,7 +4,8 @@
   align-items: center;
   position: fixed;
   top: 0;
-  background-color: #eaeef1;
+  background-color:blue;
+  color: #eaeef1;
 }
 
 .header > h3 {
@@ -23,9 +24,25 @@
   border-radius: 8px;
   cursor: pointer;
   border: 0;
-  background-color: #eaeef1;
+  color: #eaeef1;
+  background-color: blue;
 }
 
 .header-avatar {
   cursor: pointer;
+}
+
+.headerright-signout {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.headerright-signout > button {
+  margin-right: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 0;
+  color: white;
+  background-color: blue;
 }

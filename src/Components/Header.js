@@ -1,15 +1,40 @@
 import { Avatar } from '@mui/material'
 import React from 'react'
 import './Header.css'
+import { useNavigate } from 'react-router-dom'
+import { auth } from '../firebase'
+import { signOut, getAuth } from 'firebase/auth'
 
 function Header () {
+  const navigate = useNavigate()
+
+  const user = auth.currentUser
+  const lo = getAuth()
+
+  const LogOut = () =>{
+    signOut(lo).then(()=>{
+      alert("Logged Out succesfully")
+      navigate('/')
+    }).catch(()=>{
+      alert("An error occured while logging out")
+    })
+  }
+
+  const handleHomeClick = () => {
+    navigate('/home')
+  }
   return (
     <div className='header'>
       <h3>Photography</h3>
       <div className='header-right'>
-        <button>SIGN UP</button>
-        <button>LOG IN</button>
-        <Avatar className='header-avatar' />
+        { user ? 
+          <div className='headerright-signout'>
+            <button onClick={handleHomeClick}>HOME</button>
+            <button onClick={LogOut}>SIGN OUT</button>
+            <Avatar src={user.photoURL} className='header-avatar' />
+            </div>:
+          <button onClick={()=>navigate('/signup')}>SIGN IN</button>
+        }
       </div>
     </div>
   )
