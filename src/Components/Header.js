@@ -11,12 +11,12 @@ function Header () {
   const user = auth.currentUser
   const lo = getAuth()
 
-  const LogOut = () =>{
-    signOut(lo).then(()=>{
-      alert("Logged Out succesfully")
+  const LogOut = () => {
+    signOut(lo).then(() => {
+      alert('Logged Out succesfully')
       navigate('/')
-    }).catch(()=>{
-      alert("An error occured while logging out")
+    }).catch(() => {
+      alert('An error occured while logging out')
     })
   }
 
@@ -27,13 +27,13 @@ function Header () {
     <div className='header'>
       <h3>Photography</h3>
       <div className='header-right'>
-        { user ? 
-          <div className='headerright-signout'>
+        {user 
+        ? <div className='headerright-signout'>
             <button onClick={handleHomeClick}>HOME</button>
             <button onClick={LogOut}>SIGN OUT</button>
             <Avatar src={user.photoURL} className='header-avatar' />
-            </div>:
-          <button onClick={()=>navigate('/signup')}>SIGN IN</button>
+        </div>
+        : <button onClick={() => navigate('/signup')}>SIGN IN</button>
         }
       </div>
     </div>

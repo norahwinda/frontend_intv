@@ -4,7 +4,8 @@
   margin: 30px;
   color: white;
   border-radius: 8px;
-  background-color: blue; 
+  background-color: blue;
+
   display: flex;
   flex-direction: column;
   justify-content: center;

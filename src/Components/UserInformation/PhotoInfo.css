@@ -1,4 +1,4 @@
-.photoInfo {
+.photo-info {
   height: 100vh;
   margin-top: 59px;
   margin-bottom: 70px;
@@ -7,13 +7,13 @@
   align-items: center;
 }
 
-.photoInfo > img {
+.photo-info > img {
   width: 400px;
   height: 400px;
   margin-top: 20px;
 }
 
-.photoInfo > button {
+.photo-info > button {
   cursor: pointer;
   border: 1px solid silver;
   background-color: #eaeef1;
@@ -22,7 +22,7 @@
   height: 30px;
 }
 
-.photoInfo > input{
+.photo-info > input {
   height: 25px;
   width: 220px;
   margin-bottom: 20px;

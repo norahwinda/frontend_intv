@@ -3,32 +3,32 @@ import './UserInfo.css'
 import { useSelector } from 'react-redux'
 import Album from './Album'
 
-function UserInfo() {
-
+function UserInfo () {
   const idNum = useSelector((state) => state.userId.id)
-  const [ users, setUsers ] = React.useState([])
-  const [ userAlbums, setUserAlbum ] = React.useState([])
-  const [ id ] = React.useState(idNum)
+  const [users, setUsers] = React.useState([])
+  const [userAlbums, setUserAlbum] = React.useState([])
+  const [id] = React.useState(idNum)
 
-  React.useEffect(()=>{
+  React.useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
-        .then((response) => response.json())
-        .then(json => {setUsers(json)})
+      .then((response) => response.json())
+      .then(json => { setUsers(json) })
   }, [])
 
-  React.useEffect(()=>{
+  React.useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/albums')
-        .then((response) => response.json())
-        .then(json => {setUserAlbum(json)})
+      .then((response) => response.json())
+      .then(json => { setUserAlbum(json) })
   }, [])
   return (
     <div className='userinfo'>
       <h3>User Information</h3>
       <div className='user-info'>
-      {
+        {
         users.map((user) => {
-        return  user.id === id ? 
-          <div className='user-ifoData' key={ user.id }>
+          return user.id === id
+          ?
+          <div className='user-ifo-data' key={user.id}>
             <p>id: {user.id}</p>
             <p>Name: {user.name}</p>
             <p>Username: {user.username}</p>
@@ -39,19 +39,22 @@ function UserInfo() {
             <p>Company name: {user.company.name}</p>
             <p>CatchPhrase: {user.company.catchPhrase}</p>
             <p>BS: {user.company.bs}</p>
-          </div> : ""
+          </div>
+          :''
         })
       }
-      </div>
+        </div>
       <h3 className='userinfo-albumh3'>User Album</h3>
       <div className='userinfo-album'>
       {
-        userAlbums.map((userAlbum) =>{
-          return userAlbum.userId === id ? 
-          <Album key={userAlbum.id}
-            id = {userAlbum.id}
+        userAlbums.map((userAlbum) => {
+          return userAlbum.userId === id
+          ? 
+            <Album 
+            key={userAlbum.id}
+            id={userAlbum.id}
             title={userAlbum.title}
-          />: ""
+          /> : ''
         })
       }
       </div>

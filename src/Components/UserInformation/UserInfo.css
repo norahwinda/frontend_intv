@@ -1,13 +1,13 @@
 .userinfo {
-    width: 100%;
-    height: 100%;
-    margin-top: 59px;
-    align-items: center;
-    margin-bottom: 70px;
+  width: 100%;
+  height: 100%;
+  margin-top: 59px;
+  align-items: center;
+  margin-bottom: 70px;
 }
 
 .userinfo > h3 {
-    margin-left: 100px;
+  margin-left: 100px;
 }
 
 .userinfo-albumh3 {
@@ -15,18 +15,18 @@
 }
 
 .user-info {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-.user-ifoData{
-    width: 300px;
-    margin-left: 100px;
-    
+.user-ifo-data {
+  width: 300px;
+  margin-left: 100px; 
 }
 
 .userinfo-album {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
 }

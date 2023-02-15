@@ -1,13 +1,15 @@
-import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import storage from "redux-persist/lib/storage";
-import { persistReducer,
-         FLUSH,
-         REHYDRATE,
-         PAUSE,
-         PERSIST,
-         PURGE, 
-         REGISTER} from "redux-persist";
-import counterSlice from "./features/counter/counterSlice";
+import { combineReducers, configureStore } from '@reduxjs/toolkit'
+import storage from 'redux-persist/lib/storage'
+import { 
+  persistReducer,
+  FLUSH,
+  REHYDRATE,
+  PAUSE,
+  PERSIST,
+  PURGE, 
+  REGISTER
+} from 'redux-persist'
+import counterSlice from './features/counter/counterSlice'
 
 const persistConfig = {
     key: 'userId',
