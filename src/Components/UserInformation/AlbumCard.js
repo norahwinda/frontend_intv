@@ -11,7 +11,7 @@ function AlbumCard ({ image, id }) {
   const handleClick = () => {
     dispatch(resetAlbumId())
     dispatch(assignAlbumId(id))
-    navigate('/photoinfo')
+    navigate('/frontend_intv/photoinfo')
   }
   return (
     <div className='albumcard' onClick={handleClick}>

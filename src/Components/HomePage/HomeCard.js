@@ -11,7 +11,7 @@ function HomeCard ({ user, numberOfAlbum, id }) {
   const handleClick = () => {
     dispatch(resetUserId())
     dispatch(assignUserId(userId))
-    navigate('/userinfo')
+    navigate('/frontend_intv/userinfo')
   }
   return (
     <div className='home-card' onClick={handleClick}>

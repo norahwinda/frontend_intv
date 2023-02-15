@@ -11,7 +11,7 @@ function Album ({ id, title }) {
   const handleClick = () => {
     dispatch(resetAlbumId)
     dispatch(assignAlbumId(id))
-    navigate('/albuminfo')
+    navigate('/frontend_intv/albuminfo')
   }
   return (
     <div className='album' onClick={handleClick}>
