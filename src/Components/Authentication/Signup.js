@@ -10,8 +10,8 @@ function Signup () {
     signInWithPopup(auth, provider).then((result) => {
       console.log(result)
       navigate('/frontend_intv')
-    }).catch(() => {
-      alert('Unable to Sign up')
+    }).catch((error) => {
+      alert(error.message)
     })
   }
   return (
