@@ -3,7 +3,7 @@ import React from 'react'
 import LandingPage from './Components/LandingPage/LandingPage'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom' 
+import { HashRouter as Router,Routes,Route } from 'react-router-dom' 
 import Signup from './Components/Authentication/Signup'
 import { auth } from './firebase'
 import Home from './Components/HomePage/Home'
@@ -27,7 +27,7 @@ function App () {
       <Router>
         <Header />
         <Routes>
-        <Route path='/frontend_intv' exact element={<LandingPage />} />
+        <Route path='/frontend_intv/' exact element={<LandingPage />} />
         <Route path='/frontend_intv/signup' exact element={<Signup />} />
         <Route path='/frontend_intv/home' exact element={<Home />} />
         <Route path='/frontend_intv/userinfo' exact element={<UserInfo />} />
