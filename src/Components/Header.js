@@ -29,7 +29,7 @@ function Header () {
       <div className='header-right'>
         {user
           ? (
-               <div className='headerright-signout'>
+            <div className='headerright-signout'>
                  <button onClick={handleHomeClick}>HOME</button>
                  <button onClick={LogOut}>SIGN OUT</button>
                  <Avatar src={user.photoURL} className='header-avatar' />
