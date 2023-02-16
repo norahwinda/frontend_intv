@@ -29,10 +29,10 @@ function Header () {
       <div className='header-right'>
         {user
           ? <div className='headerright-signout'>
-            <button onClick={handleHomeClick}>HOME</button>
-            <button onClick={LogOut}>SIGN OUT</button>
-            <Avatar src={user.photoURL} className='header-avatar' />
-          </div>
+              <button onClick={handleHomeClick}>HOME</button>
+              <button onClick={LogOut}>SIGN OUT</button>
+              <Avatar src={user.photoURL} className='header-avatar' />
+            </div>
           : <button onClick={() => navigate('/frontend_intv/signup')}>SIGN IN</button>}
       </div>
     </div>
