@@ -27,7 +27,7 @@ function App () {
       <Router>
         <Header />
         <Routes>
-        <Route path='/frontend_intv/' exact element={<LandingPage />} />
+        <Route path='/frontend_intv/frontend_intv' exact element={<LandingPage />} />
         <Route path='/frontend_intv/signup' exact element={<Signup />} />
         <Route path='/frontend_intv/home' exact element={<Home />} />
         <Route path='/frontend_intv/userinfo' exact element={<UserInfo />} />
