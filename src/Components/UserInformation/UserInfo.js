@@ -27,34 +27,35 @@ function UserInfo () {
         {
         users.map((user) => {
           return user.id === id
-          ?
-          <div className='user-ifo-data' key={user.id}>
-            <p>id: {user.id}</p>
-            <p>Name: {user.name}</p>
-            <p>Username: {user.username}</p>
-            <p>Email: {user.email}</p>
-            <p>Address: Street:{user.address.street}<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suite:{user.address.suite}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City:{user.address.city}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zip-code:{user.address.zipcode}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lat:{user.address.geo.lat}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lng:{user.address.geo.lng}</p>
-            <p>Phone: {user.phone}</p>
-            <p>Website: {user.website}</p>
-            <p>Company name: {user.company.name}</p>
-            <p>CatchPhrase: {user.company.catchPhrase}</p>
-            <p>BS: {user.company.bs}</p>
-          </div>
-          :''
+          ? ( 
+              <div className='user-ifo-data' key={user.id}>
+                <p>id: {user.id}</p>
+                <p>Name: {user.name}</p>
+                <p>Username: {user.username}</p>
+                <p>Email: {user.email}</p>
+                <p>Address: Street:{user.address.street}<br /> &nbsp;&nbsp;&nbsp;&nbsp;&  nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suite:{user.address.suite}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City:{user.address.city}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zip-code:{user.address.zipcode}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lat:{user.address.geo.lat}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lng:{user.address.geo.lng}</p>
+                <p>Phone: {user.phone}</p>
+                <p>Website: {user.website}</p>
+                <p>Company name: {user.company.name}</p>
+                <p>CatchPhrase: {user.company.catchPhrase}</p>
+                <p>BS: {user.company.bs}</p>
+              </div>
+          )
+          : ''
         })
       }
-        </div>
+      </div>
       <h3 className='userinfo-albumh3'>User Album</h3>
       <div className='userinfo-album'>
       {
         userAlbums.map((userAlbum) => {
           return userAlbum.userId === id
-          ? 
-            <Album 
-            key={userAlbum.id}
-            id={userAlbum.id}
-            title={userAlbum.title}
-          /> : ''
+          ? <Album 
+              key={userAlbum.id}
+              id={userAlbum.id}
+              title={userAlbum.title}
+            /> 
+          : ''
         })
       }
       </div>
