@@ -20,14 +20,16 @@ function Home () {
   return (
     <div className='home'>
       <div className='home-top'>
-          <h3 className='home-top1'>Users</h3>
-          <h3 className='home-top2'>Number of Albums</h3>
-        </div>
+        <h3 className='home-top1'>Users</h3>
+        <h3 className='home-top2'>Number of Albums</h3>
+      </div>
       {
         users.map((user) => {
           let numAlbum = 0
           albums.map((album) => {
-            return (album.userId === user.id ? numAlbum = numAlbum + 1 : '')
+            return (
+              album.userId === user.id ? 
+              numAlbum = numAlbum + 1 : '')
           })
              
           return (
