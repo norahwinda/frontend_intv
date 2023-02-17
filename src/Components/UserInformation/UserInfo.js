@@ -27,8 +27,8 @@ function UserInfo () {
         {
         users.map((user) => {
           return user.id === id
-          ? ( 
-              <div className='user-ifo-data' key={user.id}>
+            ? (
+            <div className='user-ifo-data' key={user.id}>
                 <p>id: {user.id}</p>
                 <p>Name: {user.name}</p>
                 <p>Username: {user.username}</p>
@@ -40,22 +40,22 @@ function UserInfo () {
                 <p>CatchPhrase: {user.company.catchPhrase}</p>
                 <p>BS: {user.company.bs}</p>
               </div>
-          )
-          : ''
+              )
+            : ''
         })
       }
       </div>
       <h3 className='userinfo-albumh3'>User Album</h3>
       <div className='userinfo-album'>
-      {
+        {
         userAlbums.map((userAlbum) => {
           return userAlbum.userId === id
-          ? <Album 
-              key={userAlbum.id}
-              id={userAlbum.id}
-              title={userAlbum.title}
-            /> 
-          : ''
+            ? <Album
+                key={userAlbum.id}
+                id={userAlbum.id}
+                title={userAlbum.title}
+              />
+            : ''
         })
       }
       </div>
