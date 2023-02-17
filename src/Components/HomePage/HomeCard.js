@@ -17,12 +17,13 @@ function HomeCard ({ user, numberOfAlbum, id }) {
     <div className='home-card' onClick={handleClick}>
       <p className='home-cardp1'>{user}</p>
       <p className='home-cardp2'>{numberOfAlbum}</p>
-      <input 
-          type='text'
-          value={userId}
-          onChange={(e) => setUserId(e.target.value)}/>
+      <input
+        type='text'
+        value={userId}
+        onChange={(e) => setUserId(e.target.value)} 
+      />
     </div>
-         ) 
+  )
 }
 
 export default HomeCard
