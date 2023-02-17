@@ -27,9 +27,11 @@ function Home () {
         users.map((user) => {
           let numAlbum = 0
           albums.map((album) => {
-            return (
-              album.userId === user.id ? 
-              numAlbum = numAlbum + 1 : '')
+            const isEqual = album.userId === user.id
+            if(isEqual){
+              numAlbum = numAlbum + 1
+            }
+            return numAlbum
           })
              
           return (
