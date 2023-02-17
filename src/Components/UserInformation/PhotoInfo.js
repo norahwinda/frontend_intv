@@ -29,17 +29,17 @@ function PhotoInfo () {
   }
   return (
     <div className='photo-info'>
-      <img src={photoInfo.url} alt=''/>
+      <img src={photoInfo.url} alt='' />
       <h3>Title: {photoInfo.title}</h3>
       <h3>Id: {photoInfo.id}</h3>
-      <input 
-        type='text' 
+      <input
+        type='text'
         placeholder='Enter title to edit'
         value={inputTitle}
         name='inputTitle'
         onChange={(e) => setInputTitle(e.target.value)}
       />
-        <button onClick={handleClick}>Edit Image</button>
+      <button onClick={handleClick}>Edit Image</button>
     </div>
   )
 }
