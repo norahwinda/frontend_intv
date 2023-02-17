@@ -28,19 +28,18 @@ function Home () {
           let numAlbum = 0
           albums.map((album) => {
             const isEqual = album.userId === user.id
-            if(isEqual){
+            if (isEqual) {
               numAlbum = numAlbum + 1
             }
             return numAlbum
-          })
-             
+          })             
           return (
-              <HomeCard
-                  key={user.id}
-                  user={user.name}
-                  numberOfAlbum={numAlbum}
-                  id={user.id}
-                />
+            <HomeCard
+                key={user.id}
+                user={user.name}
+                numberOfAlbum={numAlbum}
+                id={user.id}
+            />
           )
         })
       }
