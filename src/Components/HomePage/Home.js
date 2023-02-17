@@ -32,13 +32,13 @@ function Home () {
               numAlbum = numAlbum + 1
             }
             return numAlbum
-          })             
+          })
           return (
             <HomeCard
-                key={user.id}
-                user={user.name}
-                numberOfAlbum={numAlbum}
-                id={user.id}
+              key={user.id}
+              user={user.name}
+              numberOfAlbum={numAlbum}
+              id={user.id}
             />
           )
         })
