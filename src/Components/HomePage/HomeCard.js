@@ -20,7 +20,7 @@ function HomeCard ({ user, numberOfAlbum, id }) {
       <input
         type='text'
         value={userId}
-        onChange={(e) => setUserId(e.target.value)} 
+        onChange={(e) => setUserId(e.target.value)}
       />
     </div>
   )

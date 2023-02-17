@@ -16,12 +16,12 @@ function AlbumInfo () {
     <div className='albuminfo'>
       {
             albums.map((album) => {
-              return thisId === album.albumId 
-              ?<AlbumCard
-                  key={album.id}
-                  image={album.url}
-                  id={album.id} 
-                />
+              return thisId === album.albumId
+                ? <AlbumCard
+                    key={album.id}
+                    image={album.url}
+                    id={album.id}
+                  />
                 : ''
             })
         }
