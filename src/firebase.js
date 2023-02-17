@@ -3,7 +3,7 @@ import { initializeApp } from 'firebase/app'
 import { getAuth, GoogleAuthProvider } from 'firebase/auth'
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDBarPhu9MiqVBdpsNF1c9aBA3gw1e247A',
+  apiKey: process.env.REACT_APP_apiKey,
   authDomain: 'interview-project-d87e0.firebaseapp.com',
   projectId: 'interview-project-d87e0',
   storageBucket: 'interview-project-d87e0.appspot.com',
